@@ -1,3 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+	    z-index:1;
+}
+
+body{
+	    font-family: 'Overpass', sans-serif;
+}
+.btn{
+		@apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue{
+		@apply bg-blue-600 text-white;
+}
+
+.btn-blue:hover{
+		@apply bg-blue-500;
+}
+
+h1, h2, h3, p{
+	@apply dark:text-amber-50
+}
+h1{
+	@apply text-7xl lg:text-9xl font-black my-4;
+}
+h2{
+	@apply text-3xl font-semibold;
+}
+h3{
+	@apply text-xl my-3 mx-4;
+}
+p{
+	@apply font-normal text-lg;
+}
+
+
+nav a{
+	@apply dark:text-white font-light text-black;
+}
+
+.bg-img{
+	background-image: url("/assets/back.jpg");
+	background-size: cover;
+}
+
+a{
+	@apply hover:underline text-orange-500
+}
+
+p, time, h1, h2, h3, h4, h5, h6, .bg-svg1, .bg-svg2, .bg-svg3, .bg-svg4, .bg-svg5 {
+  animation-duration: 0.5s;
+  animation-name: rise;
+	-webkit-animation-timing-function: linear; /*chromium*/
+	animation-timing-function: linear;
+}
+
+@keyframes rise {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 2%;
+		}
+}
+
+.darker{
+	@apply bg-neutral-200 dark:bg-neutral-800 py-16;
+}
+
+.lighter{
+	@apply py-16;
+}
+
+.btn button{
+	margin-top: 4px;
+	@apply shadow-[4px_4px_0_rgba(255,0,0,0.3)] py-2 px-5 bg-neutral-900 w-min text-white  font-bold dark:bg-neutral-700  shadow-orange-500;
+}
+.btn:hover button{
+	box-shadow: 0 0;
+	margin-top: 4px;
+	transform: translate(4px, 4px);
+}
+
+.btn{
+	width: fit-content;
+	height: 40px;
+}
+
+.lang{
+	@apply my-4
+	shadow-[4px_4px_0_rgba(255,0,0,0.3)]
+	py-2
+	px-5
+	bg-neutral-900
+	w-min
+	text-white
+  font-bold
+	dark:bg-neutral-700
+			shadow-orange-500;
+
+}
+.section{
+	 @apply container lg:max-w-4xl px-5 max-w-full lg:mx-auto;
+}
+
+.offer{
+	@apply border-4 border-orange-500;
+}
+
+.socials{
+	@apply grid grid-cols-3 md:grid-cols-6 w-fit gap-12 mx-auto;
+}
+
+.socials svg{
+	@apply w-10 m-2 dark:fill-orange-100  gap-4;
+}
+
+
+.socials a{
+	@apply border-2 w-fit border-neutral-900 dark:border-orange-50 m-2 hover:border-orange-500;
+}
+
+.socials a:hover svg{
+	@apply fill-orange-500;
+}
+
+.socials a:hover{
+	@apply dark:border-orange-500;
+}
+
+.bg-svg1{
+	@apply fill-orange-500 absolute w-52 top-96 md:w-80;
+}
+.bg-svg2{
+	@apply fill-blue-500 absolute w-52 top-96 md:w-80;
+}
+
+.bg-svg3{
+	@apply fill-blue-500 absolute w-14 top-24 left-12;
+}
+
+.bg-svg4{
+	@apply fill-blue-500 absolute w-24 top-96 left-3/4 md:top-full md:top-[700px];
+}
+
+.bg-svg5{
+	@apply dark:fill-neutral-800 fill-neutral-200 absolute w-80 top-[250px] left-12  lg:top-[390px];
+}
+svg{
+	    z-index:0;
+}

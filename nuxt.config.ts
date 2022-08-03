@@ -1,9 +1,9 @@
 import { defineNuxtConfig } from 'nuxt'
-import cz from './locales/cz.json'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 	modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+  target: 'static', // default is 'server'
 	tailwindcss: {
 		cssPath: '~/assets/css/tailwind.css',
 		configPath: 'tailwind.config.js',
@@ -18,12 +18,12 @@ export default defineNuxtConfig({
   i18n: {
     locales:
 		[
-		  { code: 'en', iso: 'en-US', file: 'en.json'},
-		  { code: 'cz', iso: 'cs-CZ', file: 'cz.json'},
+		  { code: 'en', name: 'English', iso: 'en-US', file: 'en.json'},
+		  { code: 'cz', name: 'Česky', iso: 'cs-CZ', file: 'cz.json'},
 		],
 		langDir: "lang/",
     defaultLocale: 'cz',
-		strategy: 'prefix_and_default',
+		strategy: 'prefix',
     vueI18n: {
       fallbackLocale: 'en'
     },
@@ -33,5 +33,12 @@ export default defineNuxtConfig({
     redirectOn: 'no prefix',  // recommended
   }
 
-  }
+  },
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '~/assets/favicon.ico',
+      },
+    ]
 })
