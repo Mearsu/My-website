@@ -8,8 +8,9 @@
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.1.4",
+    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
     "@nuxtjs/tailwindcss": "^5.3.1",
-    "nuxt": "3.0.0-rc.6",
-    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge"
+    "eslint": "^8.21.0",
+    "nuxt": "3.0.0-rc.6"
   }
 }
