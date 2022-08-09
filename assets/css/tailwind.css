@@ -31,7 +31,7 @@ shadow-[4px_4px_0_rgba(255,0,0,0.3)]
 py-2
 px-5
 bg-neutral-900
-w-min
+w-fit
 text-white
 font-bold
 dark:bg-neutral-700
@@ -118,7 +118,7 @@ a{
 	@apply hover:underline
 }
 
-p, time, h1, h2, h3, h4, h5, h6, .bg-svg1, .bg-svg2, .bg-svg3, .bg-svg4, .bg-svg5 {
+.anim, p, time, h1, h2, h3, h4, h5, h6, .bg-svg1, .bg-svg2, .bg-svg3, .bg-svg4, .bg-svg5 {
   animation-duration: 0.5s;
   animation-name: rise;
 	-webkit-animation-timing-function: linear; /*chromium*/
@@ -162,7 +162,7 @@ p, time, h1, h2, h3, h4, h5, h6, .bg-svg1, .bg-svg2, .bg-svg3, .bg-svg4, .bg-svg
 
 }
 .section{
-	 @apply container lg:max-w-4xl px-5 max-w-full lg:mx-auto;
+	 @apply container lg:max-w-4xl px-5 max-w-full lg:mx-auto min-h-full ;
 }
 
 .offer{
@@ -239,4 +239,8 @@ svg{
 }
 .project .description{
 	@apply h-full grid place-content-between;
+}
+
+footer{
+	@apply mt-auto w-full;
 }
