@@ -2,7 +2,7 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-	modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+	modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/image-edge'],
   target: 'static', // default is 'server'
 	tailwindcss: {
 		cssPath: '~/assets/css/tailwind.css',
@@ -40,5 +40,7 @@ export default defineNuxtConfig({
         type: 'image/x-icon',
         href: '~/assets/favicon.ico',
       },
-    ]
+    ],
+	image: {
+	 }
 })

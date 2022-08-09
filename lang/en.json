@@ -1,5 +1,7 @@
 {
   "lang": "en",
+  "Projects": "Projects",
+  "Home": "Home",
   "title-1": "Hello",
   "title-2": "I am",
   "title-3": "Matěj",
@@ -19,5 +21,10 @@
   "offer-2": "I'll help you find best web hosting for you, so you don't pay too much and I'll help you set everything up and explaing everything you'll need/want to know.",
   "hw-projects": "Hardware Projects",
   "sw-projects": "Software Projects",
-  "here": "here"
+  "here": "here",
+  "project": "Project",
+  "p1": {
+  "title": "My website",
+    "desc": "I made my website using HTML, CSS with TailwindCSS, JavaScript libraries Vue.js and Nuxt.js"
+  }
 }

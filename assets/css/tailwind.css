@@ -20,7 +20,34 @@ body{
 }
 .btn{
 		@apply font-bold;
+	width: fit-content;
+	height: 40px;
 }
+
+.btn button{
+	margin-top: 4px;
+	@apply
+shadow-[4px_4px_0_rgba(255,0,0,0.3)]
+py-2
+px-5
+bg-neutral-900
+w-min
+text-white
+font-bold
+dark:bg-neutral-700
+shadow-orange-500;
+}
+
+.btn button a{
+	@apply text-white hover:no-underline;
+}
+
+.btn:hover button{
+	box-shadow: 0 0;
+	margin-top: 4px;
+	transform: translate(4px, 4px);
+}
+
 
 .btn-blue{
 		@apply bg-blue-600 text-white;
@@ -35,7 +62,7 @@ body{
 	@apply grid grid-cols-2 justify-items-center mb-0;
 }
 
-h1, h2, h3, p, button{
+h1, h2, h3, p, button, a{
 	@apply dark:text-amber-50;
 }
 .tooltip-button:hover::after {
@@ -76,7 +103,10 @@ p{
 
 
 nav a{
-	@apply dark:text-white font-light text-black;
+	@apply font-light;
+}
+p>a{
+	@apply text-orange-500;
 }
 
 .bg-img{
@@ -85,7 +115,7 @@ nav a{
 }
 
 a{
-	@apply hover:underline text-orange-500
+	@apply hover:underline
 }
 
 p, time, h1, h2, h3, h4, h5, h6, .bg-svg1, .bg-svg2, .bg-svg3, .bg-svg4, .bg-svg5 {
@@ -117,20 +147,6 @@ p, time, h1, h2, h3, h4, h5, h6, .bg-svg1, .bg-svg2, .bg-svg3, .bg-svg4, .bg-svg
 	@apply py-16;
 }
 
-.btn button{
-	margin-top: 4px;
-	@apply shadow-[4px_4px_0_rgba(255,0,0,0.3)] py-2 px-5 bg-neutral-900 w-min text-white  font-bold dark:bg-neutral-700  shadow-orange-500;
-}
-.btn:hover button{
-	box-shadow: 0 0;
-	margin-top: 4px;
-	transform: translate(4px, 4px);
-}
-
-.btn{
-	width: fit-content;
-	height: 40px;
-}
 
 .lang{
 	@apply my-4
@@ -196,3 +212,31 @@ svg{
 	    z-index:0;
 }
 
+.project{
+	@apply md:flex mb-2;
+}
+
+.project p {
+	@apply mb-auto;
+}
+
+.project h3{
+	@apply text-center md:text-left;
+}
+
+.project div{
+}
+
+.project img{
+	@apply w-56  mx-auto md:mr-2;
+}
+
+.project .btns{
+	@apply flex mb-2;
+}
+.project .btns .btn{
+	@apply mx-2;
+}
+.project .description{
+	@apply h-full grid place-content-between;
+}

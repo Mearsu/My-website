@@ -1,5 +1,7 @@
 {
   "lang": "cz",
+  "Projects": "Projekty",
+  "Home": "Domů",
   "title-1": "Ahoj",
   "title-2": "Já jsem",
   "title-3": "Matěj",
@@ -19,5 +21,12 @@
   "offer-2": "Pomůžu vám najít nejvhodnější nabídky pro hosting vaších webových stránek, pomůžu vám vše nastavit a vysvětlím, co budete chtít/potřebovat",
   "hw-projects": "Hardware Projekty",
   "sw-projects": "Software Projekty",
-  "here": "tady"
+  "here": "tady",
+  "project": "Projekt",
+  "p1": {
+    "title": "Moje webové stránky",
+    "desc": "Moje webové stránky jsem udělal pomocí HTML, CSS s TailwindCSS, JavaScript knihoven Vue.js a Nuxt.js",
+    "p1": "Protože jsem se rozhodl naučit se některý JavaScript framework, připadlo mi jako dobrý nápad zkusit si udělat webové stránky.",
+
+  }
 }

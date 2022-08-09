@@ -1,20 +1,59 @@
 <template>
-		<div>
+	<div>
 		<h2>{{ $t('sw-projects')  }}</h2>
-			<p>
-				Blandit volutpat maecenas volutpat blandit aliquam. Leo urna, molestie at elementum eu, facilisis sed odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in.
-			</p>
-			<p>
-				Lectus mauris ultrices eros, in cursus turpis massa tincidunt dui ut. Ligula ullamcorper malesuada proin libero nunc, consequat interdum varius sit amet, mattis vulputate enim nulla aliquet porttitor lacus, luctus?
-			</p>
-			<p>
-				Faucibus in ornare quam viverra orci sagittis eu? Vitae, auctor eu augue ut lectus arcu, bibendum at varius vel, pharetra vel turpis nunc eget lorem dolor, sed viverra ipsum nunc.
-			</p>
-			<p>
-				Senectus et netus et malesuada fames ac turpis egestas sed tempus, urna et pharetra pharetra, massa massa ultricies mi, quis hendrerit dolor! Fermentum posuere urna nec tincidunt praesent semper feugiat!
-			</p>
-			<p>
-				Et, egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel?
-			</p>
+		<br />
+		<!-- <div class="project">
+			 <nuxt-img src="" alt="" loading="lazy"/>
+			 <div>
+			 <div class="description">
+			 <div>
+			 <NuxtLink to="projects/template">	<h3>My first project</h3></NuxtLink>
+			 <p>
+			 A, condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac! Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque, volutpat ac tincidunt vitae!
+			 </p>
+			 </div>
+			 <div class="btns">
+			 <div class="btn">
+			 <a href="https://www.youtube.com/watch?v=3rwMjw77CVI">
+			 <button>Source</button>
+			 </a>
+			 </div>
+			 <div class="btn">
+			 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+			 <button>Live</button>
+			 </a>
+			 </div>
+			 </div>
+			 </div>
+			 </div>
+			 </div> -->
+
+
+		<div class="project">
+			<nuxt-img src="/my_website.png" loading="lazy"/>
+			<div>
+				<div class="description">
+					<div>
+						<NuxtLink to="projects/MyWebsite">	<h3>{{ $t('p1.title')  }}</h3></NuxtLink>
+						<p>
+							{{ $t('p1.desc') }}
+						</p>
+					</div>
+					<div class="btns">
+						<div class="btn">
+							<a href="https://github.com/Mearsu/My-website">
+								<button>Source</button>
+							</a>
+						</div>
+						<div class="btn">
+							<a href="https://matej-vrba.com">
+								<button>Live</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+
+	</div>
 </template>

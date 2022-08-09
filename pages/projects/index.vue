@@ -32,10 +32,7 @@
 
 <template>
 		<div>
-				<nav class="flex lg:flex-row max-w-4xl mb-5 mx-auto justify-end py-3 navbar">
-						<ColorSwitch class="inline"/>
-						<LangSwitch />
-				</nav>
+				<navbar/>
 				<div class="section">
 						<div class="multiselector">
 								<div v-if="cat == 'hw'" class="btn-2 border-4 border-orange-500">
