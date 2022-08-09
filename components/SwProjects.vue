@@ -34,7 +34,7 @@
 			<div>
 				<div class="description">
 					<div>
-						<NuxtLink to="projects/MyWebsite">	<h3>{{ $t('sw.p1.title')  }}</h3></NuxtLink>
+						<NuxtLink :to="localePath('/projects/MyWebsite')">	<h3>{{ $t('sw.p1.title')  }}</h3></NuxtLink>
 						<p>
 							{{ $t('sw.p1.desc') }}
 						</p>
