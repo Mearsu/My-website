@@ -31,10 +31,10 @@
 </script>
 
 <template>
-		<div>
-				<navbar/>
-				<div class="section">
-						<div class="multiselector">
+		<div class="flex flex-col min-h-screen">
+				<navbar class="anim"/>
+				<div class="section anim grow">
+						<div class="multiselector anim">
 								<div v-if="cat == 'hw'" class="btn-2 border-4 border-orange-500">
 										<button @click="switchCat('sw')" class="text-xl">Software</button>
 								</div>
@@ -51,6 +51,6 @@
 						<HwProjects class="no-anim dark:bg-neutral-800 bg-neutral-100 border-4 px-5 py-2 m-0 border-blue-500 border-t-0" v-if="cat == 'hw'"/>
 						<SwProjects class="no-anim dark:bg-neutral-800 bg-neutral-100 border-4 px-5 py-2 m-0 border-orange-500 border-t-0" v-else/>
 				</div>
-
+				<footr/>
 		</div>
 </template>
