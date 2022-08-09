@@ -30,7 +30,7 @@
 
 
 		<div class="project">
-			<nuxt-img src="/my_website.png" loading="lazy"/>
+			<img src="/my_website.png" loading="lazy"/>
 			<div>
 				<div class="description">
 					<div>
