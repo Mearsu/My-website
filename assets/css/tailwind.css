@@ -25,11 +25,34 @@ body{
 }
 
 .multiselector{
-	@apply grid grid-cols-2 justify-items-center mb-10;
+	@apply grid grid-cols-2 justify-items-center mb-0;
 }
 
 h1, h2, h3, p, button{
-	@apply dark:text-amber-50
+	@apply dark:text-amber-50;
+}
+.tooltip-button:hover::after {
+  position: relative;
+  content: attr(data-tooltip);
+  background-color: #333;
+  color: white;
+  padding: .25em .5em;
+}
+.more-info {
+  position: relative;
+    cursor: pointer;
+}
+
+.more-info:hover .popup {
+    display: inline;
+}
+
+.more-info .popup {
+	@apply absolute bg-neutral-50 border border-neutral-500 py-1 px-2 text-sm min-w-max dark:bg-neutral-800 dark:border-neutral-700;
+    top: 1.5em; /*must overlap parent element otherwise pop-up doesn't stay open when rolloing over '*/
+    left: 0;
+    z-index: 100;
+    display: none;
 }
 h1{
 	@apply text-7xl lg:text-9xl font-black my-4;
@@ -63,6 +86,10 @@ p, time, h1, h2, h3, h4, h5, h6, .bg-svg1, .bg-svg2, .bg-svg3, .bg-svg4, .bg-svg
   animation-name: rise;
 	-webkit-animation-timing-function: linear; /*chromium*/
 	animation-timing-function: linear;
+}
+.no-anim *{
+  animation-duration: 0s;
+  animation-name: none;
 }
 
 @keyframes rise {
