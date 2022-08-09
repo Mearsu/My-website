@@ -1,40 +1,58 @@
-<script>
+<script lang="ts">
  export default{
+  mounted() {
+    this.init();
+  },
 		 head() {
 				 return {
 						 title: "Projects",
 				 }
 		 },
-		 data: function(){
+		 data(){
 				 return{
 						 cat: 'sw',
 				 }
+		 },
+		 methods:{
+				 init(){
+						 console.log("init");
+						 this.cat = localStorage.getItem('projectCategory');
+						 if(this.cat == null){
+								 this.cat = 'sw';
+						 }
+				 },
+				 switchCat(cat) {
+						 this.cat = cat;
+						 localStorage.setItem('projectCategory', cat);
+				 }
+
 		 }
  }
 </script>
+
 <template>
 		<div>
-				<nav class="flex lg:flex-row max-w-4xl mx-auto justify-end py-3 navbar">
-				<ColorSwitch class="inline"/>
-				<LangSwitch />
+				<nav class="flex lg:flex-row max-w-4xl mb-5 mx-auto justify-end py-3 navbar">
+						<ColorSwitch class="inline"/>
+						<LangSwitch />
 				</nav>
 				<div class="section">
 						<div class="multiselector">
-								<div v-if="cat == 'hw'" class="border-4 min-w-full border-orange-500 text-center py-3">
-										<button @click="cat = 'sw'" class="text-xl">Software</button>
+								<div v-if="cat == 'hw'" class="btn-2 border-4 border-orange-500">
+										<button @click="switchCat('sw')" class="text-xl">Software</button>
 								</div>
-								<div v-else class="border-4 min-w-full border-orange-500 text-center py-3  border-b-0 border-r-0">
-										<button @click="cat = 'sw'" class="text-xl">Software</button>
+								<div v-else class="btn-2 border-orange-500 border-4 border-b-0 border-r-0">
+										<button @click="switchCat('sw')" class="text-xl">Software</button>
 								</div>
-								<div v-if="cat == 'hw'" class="border-4 min-w-full border-blue-500 text-center py-3 border-b-0 border-l-0">
-										<button @click="cat = 'hw'" class="text-xl">Hardware</button>
+								<div v-if="cat == 'hw'" class="btn-2 border-4 border-blue-500 border-b-0 border-l-0">
+										<button @click="switchCat('hw')" class="text-xl">Hardware</button>
 								</div>
-								<div v-else class="border-4 min-w-full border-blue-500 text-center py-3">
-										<button @click="cat = 'hw'" class="text-xl">Hardware</button>
+								<div v-else class="btn-2 border-4 border-blue-500 ">
+										<button @click="switchCat('hw')" class="text-xl">Hardware</button>
 								</div>
 						</div>
-						<HwProjects class="no-anim border-4 px-5 py-2 m-0 border-blue-500 border-t-0" v-if="cat == 'hw'"/>
-						<SwProjects class="no-anim border-4 px-5 py-2 m-0 border-orange-500 border-t-0" v-else/>
+						<HwProjects class="no-anim dark:bg-neutral-800 bg-neutral-100 border-4 px-5 py-2 m-0 border-blue-500 border-t-0" v-if="cat == 'hw'"/>
+						<SwProjects class="no-anim dark:bg-neutral-800 bg-neutral-100 border-4 px-5 py-2 m-0 border-orange-500 border-t-0" v-else/>
 				</div>
 
 		</div>

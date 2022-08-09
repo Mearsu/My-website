@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h2>Hardware projects</h2>
+		<h2>{{ $t('hw-projects')  }}</h2>
 		<p>
 			Porttitor massa id neque aliquam vestibulum morbi blandit cursus risus, at? Id consectetur purus ut faucibus pulvinar elementum integer enim neque, volutpat ac tincidunt vitae, semper quis lectus nulla at.
 		</p>
