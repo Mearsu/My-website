@@ -34,9 +34,9 @@
 			<div>
 				<div class="description">
 					<div>
-						<NuxtLink to="projects/MyWebsite">	<h3>{{ $t('p1.title')  }}</h3></NuxtLink>
+						<NuxtLink to="projects/MyWebsite">	<h3>{{ $t('sw.p1.title')  }}</h3></NuxtLink>
 						<p>
-							{{ $t('p1.desc') }}
+							{{ $t('sw.p1.desc') }}
 						</p>
 					</div>
 					<div class="btns">

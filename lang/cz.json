@@ -23,10 +23,13 @@
   "sw-projects": "Software Projekty",
   "here": "tady",
   "project": "Projekt",
-  "p1": {
-    "title": "Moje webové stránky",
-    "desc": "Moje webové stránky jsem udělal pomocí HTML, CSS s TailwindCSS, JavaScript knihoven Vue.js a Nuxt.js",
-    "p1": "Protože jsem se rozhodl naučit se některý JavaScript framework, připadlo mi jako dobrý nápad zkusit si udělat webové stránky.",
-
+  "sw": {
+    "p1": {
+      "title": "Moje webové stránky",
+      "desc": "Moje webové stránky jsem udělal pomocí HTML, CSS s TailwindCSS, JavaScript knihoven Vue.js a Nuxt.js",
+      "p1": "Protože jsem se rozhodl naučit se některý JavaScript framework, připadlo mi jako dobrý nápad zkusit si udělat webové stránky.",
+      "p2": "Začal jsem úvodní stranou, kde jsem chtěl i zkončit, ale pak jsem si řekl, že by se hodilo si udělat i stránku, kde můžu ukázat svoje projekty.",
+      "p3": "Zatím tu toho moc není, protože nechcu moc ukazovat nedokončený věci, kdybych je nedodělal."
+    }
   }
 }
