@@ -1,7 +1,3 @@
-<script setup lang="ts">
- import ColorSwitch from "~/components/elements/ColorSwitch.vue"
- import LangSwitch from "~/components/elements/LangSwitch.vue"
-</script>
 <template>
 		<nav class="flex lg:flex-row max-w-4xl mx-auto justify-end py-3 navbar items-center ">
 			<span class="hidden md:inline-block">
