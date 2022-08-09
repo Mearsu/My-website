@@ -31,12 +31,12 @@
 </script>
 
 <template>
-		<div class="flex flex-col min-h-screen">
+		<div class="anim flex flex-col min-h-screen">
 				<div>
-				<navbar class="anim"/>
+				<navbar/>
 				</div>
-				<div class="section anim grow">
-						<div class="multiselector anim">
+				<div class="section grow">
+						<div class="multiselector">
 								<div v-if="cat == 'hw'" class="btn-2 border-4 border-orange-500">
 										<button @click="switchCat('sw')" class="text-xl">Software</button>
 								</div>
