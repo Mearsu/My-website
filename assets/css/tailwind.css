@@ -8,21 +8,27 @@
 }
 
 body{
+	@apply dark:bg-neutral-900 bg-neutral-50;
 	    font-family: 'Overpass', sans-serif;
 }
 .btn{
-		@apply font-bold py-2 px-4 rounded;
+		@apply font-bold;
 }
 
 .btn-blue{
 		@apply bg-blue-600 text-white;
+		box-shadow: 4px 4px red;
 }
 
 .btn-blue:hover{
 		@apply bg-blue-500;
 }
 
-h1, h2, h3, p{
+.multiselector{
+	@apply grid grid-cols-2 justify-items-center mb-10;
+}
+
+h1, h2, h3, p, button{
 	@apply dark:text-amber-50
 }
 h1{
@@ -155,3 +161,4 @@ p, time, h1, h2, h3, h4, h5, h6, .bg-svg1, .bg-svg2, .bg-svg3, .bg-svg4, .bg-svg
 svg{
 	    z-index:0;
 }
+
