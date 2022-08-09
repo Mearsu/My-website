@@ -217,7 +217,7 @@ svg{
 }
 
 .project p {
-	@apply mb-auto;
+	@apply mb-auto ml-4;
 }
 
 .project h3{
