@@ -28,5 +28,6 @@
 			 </div>
 			 </div>
 			 </div> -->
+		<p>{{ $t('hw.empty')  }}</p>
 	</div>
 </template>

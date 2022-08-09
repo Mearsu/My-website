@@ -1,6 +1,5 @@
 <script setup lang="ts">
  import navbar from "~/components/layout/navbar.vue"
- import footr from "~/components/layout/footr.vue"
  import dev from "~/components/elements/svgs/dev.vue"
  import server from "~/components/elements/svgs/server.vue"
  const layout = "default";
@@ -124,12 +123,20 @@
 						</div>
 						<div class="border-4 border-blue-500">
 							<h3>{{ $t('offer-2-title')  }}</h3>
-							<p class="text-base mx-2 my-2">{{ $t('offer-2')  }}</p>
+							<p class="text-base m-2">{{ $t('offer-2')  }}</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="lighter">
+			<div class="section lighter">
+				<h2 id="projects">{{ $t('my-projects.title')  }}</h2>
+					<hr class="w-14 my-3 border-orange-500"/>
+					<p>{{ $t('my-projects.desc') }}</p>
+					<div class="btn">
+						<NuxtLink to="/projects"><button>{{$t('my-projects.title')}}</button></NuxtLink>
+					</div>
+			</div>
+			<div class="darker">
 				<div class="section">
 					<h2 id="contact">{{$t('contact')}}</h2>
 					<hr class="w-14 my-3 border-orange-500"/>

@@ -23,6 +23,13 @@
   "sw-projects": "Software Projekty",
   "here": "tady",
   "project": "Projekt",
+  "my-projects": {
+    "title": "Moje projekty",
+    "desc": "Ve volném čase pracuju na různých nejen software ale i hardware projektech. Zatím jich nemám moc vystavených, ale to se změní.",
+  },
+  "hw": {
+    "empty": "Zatím tu je prázdno? To aby jsem sem něco přidal..."
+  },
   "sw": {
     "p1": {
       "title": "Moje webové stránky",
