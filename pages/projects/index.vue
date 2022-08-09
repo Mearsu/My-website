@@ -32,7 +32,9 @@
 
 <template>
 		<div class="flex flex-col min-h-screen">
+				<div>
 				<navbar class="anim"/>
+				</div>
 				<div class="section anim grow">
 						<div class="multiselector anim">
 								<div v-if="cat == 'hw'" class="btn-2 border-4 border-orange-500">
