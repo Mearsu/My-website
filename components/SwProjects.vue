@@ -42,13 +42,13 @@
 					<div class="btns">
 						<div class="btn">
 							<a href="https://github.com/Mearsu/My-website">
-								<button>Source</button>
+								<button>{{ $t('my-projects.Source')  }}</button>
 							</a>
 						</div>
 						<div class="btn">
-							<a href="https://matej-vrba.com">
-								<button>Live</button>
-							</a>
+							<NuxtLink href="/">
+								<button>{{ $t('my-projects.Live')  }}</button>
+							</NuxtLink>
 						</div>
 					</div>
 				</div>

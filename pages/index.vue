@@ -62,9 +62,9 @@
 				<div class="w-14 md:flex-1 ">
 				</div>
 				<div class="md:max-w-4xl container w-fit mx-auto px-2 py-12 my-12 md:flex-1 grid">
-					<h1 class="w-fit">{{ $t('title-1') }}<span class="text-orange-500">.</span></h1>
-					<h1 class="w-fit">{{ $t('title-2') }}</h1>
-					<h1 class="w-fit">{{ $t('title-3') }}</h1>
+					<h1 class="text-7xl lg:text-9xl w-fit">{{ $t('title-1') }}<span class="text-orange-500">.</span></h1>
+					<h1 class="text-7xl lg:text-9xl w-fit">{{ $t('title-2') }}</h1>
+					<h1 class="text-7xl lg:text-9xl w-fit">{{ $t('title-3') }}</h1>
 				</div>
 			</div>
 

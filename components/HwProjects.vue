@@ -3,31 +3,26 @@
 		<h2>{{ $t('hw-projects')  }}</h2>
 		<br />
 
-		<!-- <div class="project">
-			 <nuxt-img src="" alt="" loading="lazy"/>
-			 <div>
-			 <div class="description">
-			 <div>
-			 <NuxtLink to="projects/template">	<h3>My first project</h3></NuxtLink>
-			 <p>
-			 A, condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac! Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque, volutpat ac tincidunt vitae!
-			 </p>
-			 </div>
-			 <div class="btns">
-			 <div class="btn">
-			 <a href="https://www.youtube.com/watch?v=3rwMjw77CVI">
-			 <button>Source</button>
-			 </a>
-			 </div>
-			 <div class="btn">
-			 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-			 <button>Live</button>
-			 </a>
-			 </div>
-			 </div>
-			 </div>
-			 </div>
-			 </div> -->
-		<p>{{ $t('hw.empty')  }}</p>
+		<div class="project">
+			<img src="/hw/p1/avr_hello_world.jpg" loading="lazy"/>
+			<div>
+				<div class="description">
+					<div>
+						<NuxtLink :to="localePath('/projects/firstAvr')">	<h3>{{ $t('hw.p1.title')  }}</h3></NuxtLink>
+						<p>
+							{{ $t('hw.p1.desc') }}
+						</p>
+					</div>
+					<div class="btns">
+						<div class="btn">
+							<a href="/hw/p1/avr.pdf">
+								<button>{{ $t('my-projects.schematic')  }}</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </template>

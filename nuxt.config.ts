@@ -2,8 +2,8 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-	modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
-  target: 'static', // default is 'server'
+	modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/content'],
+  target: 'server', // default is 'server'
 	tailwindcss: {
 		cssPath: '~/assets/css/tailwind.css',
 		configPath: 'tailwind.config.js',
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
 		],
 		langDir: "lang/",
     defaultLocale: 'cz',
-		strategy: 'prefix',
+		strategy: 'noPrefixDefaultLocale',
     vueI18n: {
       fallbackLocale: 'en'
     },
@@ -33,6 +33,9 @@ export default defineNuxtConfig({
     redirectOn: 'root',  // recommended
   }
 
+  },
+content: {
+    // https://content.nuxtjs.org/api/configuration
   },
     link: [
       {

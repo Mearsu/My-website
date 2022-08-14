@@ -26,9 +26,15 @@
   "my-projects": {
     "title": "My projects",
     "desc": "In my free time I work on different not only software, but also hardware projects. You can see what I'm comfortable with showing here:",
+    "Source": "Source",
+    "Live": "Live",
+    "schematic": "Schematic",
   },
   "hw": {
-    "empty": "So empty.... I better make something about this..."
+    "p1":{
+      "title": "First experience with AVR",
+      "desc": "I've decided to try to do something with AVR microcontroller, so I used it to print text to LCD."
+    }
   },
   "sw":{
     "p1": {
