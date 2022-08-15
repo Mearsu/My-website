@@ -1,0 +1,1 @@
+../../cz/projects/[...slug].vue

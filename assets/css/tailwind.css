@@ -239,3 +239,19 @@ svg{
 footer{
 	@apply mt-auto w-full;
 }
+.embed-controls{
+	@apply mx-auto w-full  rounded-tl-lg rounded-tr-lg text-neutral-100 text-sm py-1 grid grid-cols-3 justify-between;
+}
+/* for chrome */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+.embed-controls{
+	@apply bg-[#323639];
+}
+}
+
+/* for firefox */
+@-moz-document url-prefix() {
+.embed-controls{
+	@apply bg-[#38383D];
+}
+}

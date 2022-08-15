@@ -2,58 +2,37 @@
 	<div>
 		<h2>{{ $t('sw-projects')  }}</h2>
 		<br />
-		<!-- <div class="project">
-			 <nuxt-img src="" alt="" loading="lazy"/>
-			 <div>
-			 <div class="description">
-			 <div>
-			 <NuxtLink to="projects/template">	<h3>My first project</h3></NuxtLink>
-			 <p>
-			 A, condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac! Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque, volutpat ac tincidunt vitae!
-			 </p>
-			 </div>
-			 <div class="btns">
-			 <div class="btn">
-			 <a href="https://www.youtube.com/watch?v=3rwMjw77CVI">
-			 <button>Source</button>
-			 </a>
-			 </div>
-			 <div class="btn">
-			 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-			 <button>Live</button>
-			 </a>
-			 </div>
-			 </div>
-			 </div>
-			 </div>
-			 </div> -->
-
-
-		<div class="project">
-			<img src="/my_website.png" loading="lazy"/>
-			<div>
-				<div class="description">
-					<div>
-						<NuxtLink :to="localePath('/projects/MyWebsite')">	<h3>{{ $t('sw.p1.title')  }}</h3></NuxtLink>
-						<p>
-							{{ $t('sw.p1.desc') }}
-						</p>
-					</div>
-					<div class="btns">
-						<div class="btn">
-							<a href="https://github.com/Mearsu/My-website">
-								<button>{{ $t('my-projects.Source')  }}</button>
-							</a>
-						</div>
-						<div class="btn">
-							<NuxtLink href="/">
-								<button>{{ $t('my-projects.Live')  }}</button>
-							</NuxtLink>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <ContentList :path="localePath('/projects/sw')" v-slot="{ list }">
+        <div v-for="project in list" class="project" :key="project._path">
+						<img :src="project.img" loading="lazy"/>
+								<div class="description">
+										<div>
+												<NuxtLink :to="project._path">	<h3>{{ project.title  }}</h3></NuxtLink>
+												<p>
+														{{ project.description }}
+												</p>
+										</div>
+										<div class="btns">
+												<div class="btn" v-if="project.btn1">
+														<a :href="project.btn1_href" v-if="project.btn1_nuxtlink.length === 0">
+																<button>{{ project.btn1 }}</button>
+														</a>
+														<NuxtLink to="project.btn1_nuxtlink" v-else>
+																<button>{{ project.btn1 }}</button>
+														</NuxtLink>
+												</div>
+												<div class="btn" v-if="project.btn2">
+														<a :href="project.btn2_href" v-if="project.btn2_nuxtlink.length === 0">
+																<button>{{ project.btn2 }}</button>
+														</a>
+														<NuxtLink to="project.btn2_nuxtlink" v-else>
+																<button>{{ project.btn2 }}</button>
+														</NuxtLink>
+												</div>
+											</div>
+								</div>
+        </div>
+    </ContentList>
 
 	</div>
 </template>

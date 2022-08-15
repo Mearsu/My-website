@@ -30,27 +30,4 @@
     "Live": "Náhled",
     "schematic": "Schéma",
   },
-  "hw": {
-    "p1":{
-      "title": "První zkušenosti s AVR",
-      "desc": "Rozhodl jsem se zkusit si něco s mikropočítačem AVR, a tak jsem pomocí něj vypsal zprávu na LCD displej.",
-      "p1": "Nápad koupit si AVR čip a něco s ním zkusit jsem dostal, když jsem si kupoval věci na jinej projekt a uviděl jsem programátor na AVR čipy. Přidal jsem ho společně se třemi ATmega8L do košíku a za pár dní jsem je měl v ruce.",
-      "p2": "Proč ATmega8? protože to byl první levný AVR čip, co jsem uviděl.",
-      "p3": "Momentálně je chcu použít na jiný projekt, ale ten bude složitější, tak jsem se rozhodl zkusit vypsat text na LCD, protože to se také bude hodit.",
-      "p4": "Zapojil jsem napájení a na I/O pin PD0 LED diodu a napsal jednoduchý program, který s ní bude blikat, jen, aby jsem si ověřil, že vše funguje jak má, než se budu vrhat do něčeho složitějšího.",
-      "p5": "",
-      "p6": "",
-      "p7": "",
-      "p8": "Zapojil jsem ho podle tohohle ",
-    }
-  },
-  "sw": {
-    "p1": {
-      "title": "Moje webové stránky",
-      "desc": "Moje webové stránky jsem udělal pomocí HTML, CSS s TailwindCSS, JavaScript knihoven Vue.js a Nuxt.js",
-      "p1": "Protože jsem se rozhodl naučit se některý JavaScript framework, připadlo mi jako dobrý nápad zkusit si udělat webové stránky.",
-      "p2": "Začal jsem úvodní stranou, kde jsem chtěl i zkončit, ale pak jsem si řekl, že by se hodilo si udělat i stránku, kde můžu ukázat svoje projekty.",
-      "p3": "Zatím tu toho moc není, protože nechcu moc ukazovat nedokončený věci, kdybych je nedodělal."
-    }
-  }
 }

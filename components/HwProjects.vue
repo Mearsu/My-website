@@ -2,27 +2,37 @@
 	<div>
 		<h2>{{ $t('hw-projects')  }}</h2>
 		<br />
-
-		<div class="project">
-			<img src="/hw/p1/avr_hello_world.jpg" loading="lazy"/>
-			<div>
-				<div class="description">
-					<div>
-						<NuxtLink :to="localePath('/projects/firstAvr')">	<h3>{{ $t('hw.p1.title')  }}</h3></NuxtLink>
-						<p>
-							{{ $t('hw.p1.desc') }}
-						</p>
-					</div>
-					<div class="btns">
-						<div class="btn">
-							<a href="/hw/p1/avr.pdf">
-								<button>{{ $t('my-projects.schematic')  }}</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <ContentList :path="localePath('/projects/hw')" v-slot="{ list }">
+        <div v-for="project in list" class="project" :key="project._path">
+						<img :src="project.img" loading="lazy"/>
+								<div class="description">
+										<div>
+												<NuxtLink :to="project._path">	<h3>{{ project.title  }}</h3></NuxtLink>
+												<p>
+														{{ project.description }}
+												</p>
+										</div>
+										<div class="btns">
+												<div class="btn" v-if="project.btn1">
+														<a :href="project.btn1_href" v-if="project.btn1_nuxtlink.length === 0">
+																<button>{{ project.btn1 }}</button>
+														</a>
+														<NuxtLink to="project.btn1_nuxtlink" v-else>
+																<button>{{ project.btn1 }}</button>
+														</NuxtLink>
+												</div>
+												<div class="btn" v-if="project.btn2">
+														<a :href="project.btn2_href" v-if="project.btn2_nuxtlink.length === 0">
+																<button>{{ project.btn2 }}</button>
+														</a>
+														<NuxtLink to="project.btn2_nuxtlink" v-else>
+																<button>{{ project.btn2 }}</button>
+														</NuxtLink>
+												</div>
+											</div>
+								</div>
+        </div>
+    </ContentList>
 
 	</div>
 </template>

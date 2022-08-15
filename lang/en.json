@@ -36,13 +36,4 @@
       "desc": "I've decided to try to do something with AVR microcontroller, so I used it to print text to LCD."
     }
   },
-  "sw":{
-    "p1": {
-      "title": "My website",
-      "desc": "I made my website using HTML, CSS with TailwindCSS, JavaScript libraries Vue.js and Nuxt.js",
-      "p1": "Because I've decided to learn a JavaScript framework, it seamed like a good idea to make a personal website.",
-      "p2": "I started with the landing page and that's where I wanted to leave it, but I§ve decided to make aditional page to show off my projects.",
-      "p3": "It's not like there's a lot to see... for now, because I don't want to show unfinished projects in case I don't finish them."
-    }
-  }
 }

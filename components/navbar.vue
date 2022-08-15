@@ -17,8 +17,8 @@
 						</svg>
 
 						</button>
-						<a class="mx-6" href="/">{{ $t('Home') }}</a>
-						<a class="mx-6" href="/projects">{{ $t('Projects')  }}</a>
+						<NuxtLink class="mx-6" :to="localePath('/')">{{ $t('Home') }}</NuxtLInk>
+						<NuxtLink class="mx-6" :to="localePath('/projects')">{{ $t('Projects')  }}</NuxtLink>
 				</div>
 				<div>
 						<ColorSwitch class="inline"/>
