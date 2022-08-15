@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 	modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/content'],
   target: 'static', // default is 'server'
 	tailwindcss: {
-		cssPath: '~/assets/css/tailwind.css',
+		cssPath: '~/assets/css/tailwind.scss',
 		configPath: 'tailwind.config.js',
 		exposeConfig: false,
 		config: {},

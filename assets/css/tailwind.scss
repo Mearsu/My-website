@@ -13,35 +13,34 @@ body{
 }
 .btn-2{
 	@apply min-w-full text-center dark:bg-neutral-800 bg-neutral-100;
-}
 
-.btn-2 button{
-	@apply min-w-full py-3;
+	button{
+		@apply min-w-full py-3;
+	}
 }
 .btn{
-		@apply font-bold;
+	@apply font-bold;
 	width: fit-content;
 	height: 40px;
-}
 
-.btn button{
-	margin-top: 4px;
-	@apply
-shadow-[4px_4px_0_rgba(255,0,0,0.3)]
-py-2
-px-5
-bg-neutral-900
-w-fit
-text-white
-font-bold
-dark:bg-neutral-700
-shadow-orange-500;
-}
+	button{
+		margin-top: 4px;
+		@apply
+		shadow-[4px_4px_0_rgba(255,0,0,0.3)]
+		py-2
+		px-5
+		bg-neutral-900
+		w-fit
+		text-white
+		font-bold
+		dark:bg-neutral-700
+				 shadow-orange-500;
 
-.btn button a{
-	@apply text-white hover:no-underline;
+		a{
+			@apply text-white hover:no-underline;
+		}
+	}
 }
-
 .btn:hover button{
 	box-shadow: 0 0;
 	margin-top: 4px;
@@ -75,18 +74,18 @@ h1, h2, h3, p, button, a{
 .more-info {
   position: relative;
     cursor: pointer;
-}
 
-.more-info:hover .popup {
+&:hover .popup {
     display: inline;
 }
 
-.more-info .popup {
+ .popup {
 	@apply absolute bg-neutral-50 border border-neutral-500 py-1 px-2 text-sm min-w-max dark:bg-neutral-800 dark:border-neutral-700;
     top: 1.5em; /*must overlap parent element otherwise pop-up doesn't stay open when rolloing over '*/
     left: 0;
     z-index: 100;
     display: none;
+}
 }
 h1{
 	@apply text-4xl lg:text-7xl font-black my-4;
@@ -166,23 +165,23 @@ a{
 
 .socials{
 	@apply grid grid-cols-3 md:grid-cols-6 w-fit gap-12 mx-auto;
-}
 
-.socials svg{
-	@apply w-10 m-2 dark:fill-orange-100  gap-4;
-}
+	svg{
+		@apply w-10 m-2 dark:fill-orange-100  gap-4;
+	}
 
 
-.socials a{
-	@apply border-2 w-fit border-neutral-900 dark:border-orange-50 m-2 hover:border-orange-500;
-}
+	a{
+		@apply border-2 w-fit border-neutral-900 dark:border-orange-50 m-2 hover:border-orange-500;
+	}
 
-.socials a:hover svg{
-	@apply fill-orange-500;
-}
+	a:hover svg{
+		@apply fill-orange-500;
+	}
 
-.socials a:hover{
-	@apply dark:border-orange-500;
+	a:hover{
+		@apply dark:border-orange-500;
+	}
 }
 
 .bg-svg1{
@@ -209,31 +208,28 @@ svg{
 
 .project{
 	@apply md:flex mb-2;
-}
 
-.project p {
-	@apply mb-auto ml-4;
-}
+	p {
+		@apply mb-auto ml-4;
+	}
 
-.project h3{
-	@apply text-center md:text-left;
-}
+	h3{
+		@apply text-center md:text-left;
+	}
 
-.project div{
-}
+	img{
+		@apply w-56  mx-auto md:mr-2;
+	}
 
-.project img{
-	@apply w-56  mx-auto md:mr-2;
-}
-
-.project .btns{
-	@apply flex mb-2;
-}
-.project .btns .btn{
-	@apply mx-2;
-}
-.project .description{
-	@apply h-full grid place-content-between;
+	.btns{
+		@apply flex mb-2;
+	}
+	.btns .btn{
+		@apply mx-2;
+	}
+	.description{
+		@apply h-full grid place-content-between;
+	}
 }
 
 footer{
@@ -241,17 +237,22 @@ footer{
 }
 .embed-controls{
 	@apply mx-auto w-full  rounded-tl-lg rounded-tr-lg text-neutral-100 text-sm py-1 grid grid-cols-3 justify-between;
-}
-/* for chrome */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-.embed-controls{
-	@apply bg-[#323639];
-}
-}
+	button a{
+		@apply w-fit mx-auto rounded-sm px-1;
+	}
+	/* for chrome */
+	@media screen and (-webkit-min-device-pixel-ratio: 0) {
+		@apply bg-[#323639];
+		button, a{
+			@apply hover:bg-[#424649] ;
+		}
+	}
 
-/* for firefox */
-@-moz-document url-prefix() {
-.embed-controls{
-	@apply bg-[#38383D];
-}
+	/* for firefox */
+	@-moz-document url-prefix() {
+		@apply bg-[#38383D];
+		button, a{
+			@apply hover:bg-[#666667] ;
+		}
+	}
 }
